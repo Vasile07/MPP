@@ -1,0 +1,384 @@
+15 Mar 2024 14:45:35,558 INFO  ro.mpp2024.Repository.AngajatRepository 24 <init> - Initializing AngajatRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 14:45:35,568 TRACE ro.mpp2024.Repository.AngajatRepository 133 findAll - Enter
+15 Mar 2024 14:45:35,569 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 14:45:35,569 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 14:45:35,569 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 14:45:35,597 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 14:45:35,597 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 14:45:39,052 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@c05fddc)
+15 Mar 2024 14:45:39,087 TRACE ro.mpp2024.Repository.AngajatRepository 151 findAll - Exit: Angajati: [Angajat{nume='Pop', prenume='Ionut', locatie='Cluj-Napoca', parola='popionut'}, Angajat{nume='Airizer', prenume='Viktor', locatie='Brasov', parola='airizerviktor'}, Angajat{nume='Rus', prenume='George', locatie='Cluj-Napoca', parola='rusgeorge'}]
+15 Mar 2024 20:05:23,319 INFO  ro.mpp2024.Repository.ParticipareRepository 23 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 20:05:23,330 TRACE ro.mpp2024.Repository.ParticipareRepository 127 findAll - Enter
+15 Mar 2024 20:05:23,331 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 20:05:23,331 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 20:05:23,332 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 20:05:23,333 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 20:05:23,333 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 20:05:24,241 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+15 Mar 2024 20:05:24,248 ERROR ro.mpp2024.Repository.ParticipareRepository 147 findAll - java.sql.SQLException: Error parsing time stamp
+15 Mar 2024 21:26:23,259 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:26:23,280 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+15 Mar 2024 21:26:23,280 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:26:23,281 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:26:23,282 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:26:23,283 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:26:23,285 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:26:24,142 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+15 Mar 2024 21:26:24,151 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{dataInscrierii=2023-12-22}]
+15 Mar 2024 21:27:54,300 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:27:54,306 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+15 Mar 2024 21:27:54,306 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:27:54,306 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:27:54,306 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:27:54,307 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:27:54,308 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:27:54,678 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+15 Mar 2024 21:27:54,683 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=1, id2=1}dataInscrierii=2023-12-22}]
+15 Mar 2024 21:28:09,738 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:28:09,746 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+15 Mar 2024 21:28:09,746 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:28:09,746 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:28:09,747 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:28:09,747 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:28:09,747 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:28:09,994 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+15 Mar 2024 21:28:10,000 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=1, id2=1}, dataInscrierii=2023-12-22}]
+15 Mar 2024 21:29:01,446 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:29:01,460 TRACE ro.mpp2024.Repository.ParticipareRepository 32 add - Enter Saving participare [!!!ro.mpp2024.Domain.Participare@52b1beb6=>java.lang.NullPointerException:Cannot invoke "ro.mpp2024.Domain.Pair.toString()" because the return value of "ro.mpp2024.Domain.Participare.getId()" is null!!!]
+15 Mar 2024 21:29:01,461 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:29:01,461 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:29:01,461 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:29:01,462 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:29:01,462 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:29:01,678 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79207381)
+15 Mar 2024 21:29:10,634 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:29:10,644 TRACE ro.mpp2024.Repository.ParticipareRepository 32 add - Enter Saving participare [!!!ro.mpp2024.Domain.Participare@52b1beb6=>java.lang.NullPointerException:Cannot invoke "ro.mpp2024.Domain.Pair.toString()" because the return value of "ro.mpp2024.Domain.Participare.getId()" is null!!!]
+15 Mar 2024 21:29:10,645 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:29:10,645 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:29:10,645 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:29:10,645 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:29:10,646 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:29:10,893 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79207381)
+15 Mar 2024 21:29:51,266 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:29:51,280 TRACE ro.mpp2024.Repository.ParticipareRepository 32 add - Enter Saving participare ParticipareValdiator{Pair{id1=1, id2=2}, dataInscrierii=2023-12-14}
+15 Mar 2024 21:29:51,280 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:29:51,281 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:29:51,281 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:29:51,281 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:29:51,282 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:29:51,527 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79207381)
+15 Mar 2024 21:29:51,542 TRACE ro.mpp2024.Repository.ParticipareRepository 45 add - Saved 1 instances
+15 Mar 2024 21:29:51,543 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+15 Mar 2024 21:29:51,543 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:29:51,543 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79207381)
+15 Mar 2024 21:29:51,546 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=1, id2=1}, dataInscrierii=2023-12-22}, ParticipareValdiator{Pair{id1=1, id2=2}, dataInscrierii=2023-12-14}]
+15 Mar 2024 21:31:03,105 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:31:03,116 TRACE ro.mpp2024.Repository.ParticipareRepository 32 add - Enter Saving participare ParticipareValdiator{Pair{id1=1, id2=2}, dataInscrierii=2023-12-14}
+15 Mar 2024 21:31:03,117 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:31:03,117 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:31:03,117 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:31:03,117 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:31:03,118 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:31:03,360 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79207381)
+15 Mar 2024 21:31:03,371 TRACE ro.mpp2024.Repository.ParticipareRepository 45 add - Saved 1 instances
+15 Mar 2024 21:31:03,371 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+15 Mar 2024 21:31:03,372 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:31:03,372 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79207381)
+15 Mar 2024 21:31:03,373 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=1, id2=1}, dataInscrierii=2023-12-22}, ParticipareValdiator{Pair{id1=1, id2=2}, dataInscrierii=2023-12-14}]
+15 Mar 2024 21:37:54,561 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:37:54,576 TRACE ro.mpp2024.Repository.ParticipareRepository 32 add - Enter Saving participare ParticipareValdiator{Pair{id1=1, id2=2}, dataInscrierii=2023-12-14}
+15 Mar 2024 21:37:54,576 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:37:54,577 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:37:54,577 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:37:54,577 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:37:54,578 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:37:54,852 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79207381)
+15 Mar 2024 21:37:54,858 ERROR ro.mpp2024.Repository.ParticipareRepository 51 add - org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY]  A PRIMARY KEY constraint failed (UNIQUE constraint failed: Participare.id_participant, Participare.id_proba)
+15 Mar 2024 21:38:09,059 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+15 Mar 2024 21:38:09,067 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+15 Mar 2024 21:38:09,067 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+15 Mar 2024 21:38:09,067 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+15 Mar 2024 21:38:09,068 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+15 Mar 2024 21:38:09,068 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+15 Mar 2024 21:38:09,068 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+15 Mar 2024 21:38:09,271 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+15 Mar 2024 21:38:09,277 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=1, id2=1}, dataInscrierii=2023-12-22}, ParticipareValdiator{Pair{id1=1, id2=2}, dataInscrierii=2023-12-14}, ParticipareValdiator{Pair{id1=1, id2=3}, dataInscrierii=2023-02-12}]
+16 Mar 2024 17:16:59,557 INFO  ro.mpp2024.Repository.AngajatRepository 24 <init> - Initializing AngajatRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+16 Mar 2024 17:16:59,562 TRACE ro.mpp2024.Repository.AngajatRepository 133 findAll - Enter
+16 Mar 2024 17:16:59,562 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:16:59,562 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2024 17:16:59,563 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+16 Mar 2024 17:16:59,563 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2024 17:16:59,563 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2024 17:17:00,379 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:00,387 TRACE ro.mpp2024.Repository.AngajatRepository 151 findAll - Exit: Angajati: [Angajat{nume='Pop', prenume='Ionut', locatie='Cluj-Napoca', parola='popionut'}, Angajat{nume='Airizer', prenume='Viktor', locatie='Brasov', parola='airizerviktor'}, Angajat{nume='Rus', prenume='George', locatie='Cluj-Napoca', parola='rusgeorge'}]
+16 Mar 2024 17:17:00,390 TRACE ro.mpp2024.Repository.AngajatRepository 31 add - Enter Saving angajat Angajat{nume='Test', prenume='Test', locatie='Locatie Test', parola='Parola Test'}
+16 Mar 2024 17:17:00,390 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:00,390 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:39,740 INFO  ro.mpp2024.Repository.AngajatRepository 24 <init> - Initializing AngajatRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+16 Mar 2024 17:17:39,757 TRACE ro.mpp2024.Repository.AngajatRepository 133 findAll - Enter
+16 Mar 2024 17:17:39,758 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:39,758 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2024 17:17:39,759 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+16 Mar 2024 17:17:39,759 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2024 17:17:39,760 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2024 17:17:40,003 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,009 TRACE ro.mpp2024.Repository.AngajatRepository 151 findAll - Exit: Angajati: [Angajat{nume='Pop', prenume='Ionut', locatie='Cluj-Napoca', parola='popionut'}, Angajat{nume='Airizer', prenume='Viktor', locatie='Brasov', parola='airizerviktor'}, Angajat{nume='Rus', prenume='George', locatie='Cluj-Napoca', parola='rusgeorge'}]
+16 Mar 2024 17:17:40,011 TRACE ro.mpp2024.Repository.AngajatRepository 31 add - Enter Saving angajat Angajat{nume='Test', prenume='Test', locatie='Locatie Test', parola='Parola Test'}
+16 Mar 2024 17:17:40,011 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:40,011 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,018 TRACE ro.mpp2024.Repository.AngajatRepository 44 add - Saved 1 instances
+16 Mar 2024 17:17:40,018 TRACE ro.mpp2024.Repository.AngajatRepository 133 findAll - Enter
+16 Mar 2024 17:17:40,018 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:40,018 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,019 TRACE ro.mpp2024.Repository.AngajatRepository 151 findAll - Exit: Angajati: [Angajat{nume='Pop', prenume='Ionut', locatie='Cluj-Napoca', parola='popionut'}, Angajat{nume='Airizer', prenume='Viktor', locatie='Brasov', parola='airizerviktor'}, Angajat{nume='Rus', prenume='George', locatie='Cluj-Napoca', parola='rusgeorge'}, Angajat{nume='Test', prenume='Test', locatie='Locatie Test', parola='Parola Test'}]
+16 Mar 2024 17:17:40,019 TRACE ro.mpp2024.Repository.AngajatRepository 57 update - Enter Updating angajat Angajat{nume='Test Nou', prenume='Test Nou', locatie='Locatie Test', parola='Parola Test'}
+16 Mar 2024 17:17:40,020 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:40,020 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,020 TRACE ro.mpp2024.Repository.AngajatRepository 71 update - Updated 0 instances
+16 Mar 2024 17:17:40,020 TRACE ro.mpp2024.Repository.AngajatRepository 133 findAll - Enter
+16 Mar 2024 17:17:40,020 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:40,020 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,021 TRACE ro.mpp2024.Repository.AngajatRepository 151 findAll - Exit: Angajati: [Angajat{nume='Pop', prenume='Ionut', locatie='Cluj-Napoca', parola='popionut'}, Angajat{nume='Airizer', prenume='Viktor', locatie='Brasov', parola='airizerviktor'}, Angajat{nume='Rus', prenume='George', locatie='Cluj-Napoca', parola='rusgeorge'}, Angajat{nume='Test', prenume='Test', locatie='Locatie Test', parola='Parola Test'}]
+16 Mar 2024 17:17:40,022 TRACE ro.mpp2024.Repository.AngajatRepository 104 findById - Enter Finding angajat with id 4
+16 Mar 2024 17:17:40,022 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:40,022 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,023 TRACE ro.mpp2024.Repository.AngajatRepository 122 findById - Exit: No angajat with id 4 was found
+16 Mar 2024 17:17:40,023 TRACE ro.mpp2024.Repository.AngajatRepository 84 deleteById - Enter Deleting angajat with id 4
+16 Mar 2024 17:17:40,023 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:40,023 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,024 TRACE ro.mpp2024.Repository.AngajatRepository 104 findById - Enter Finding angajat with id 4
+16 Mar 2024 17:17:40,024 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:40,024 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,024 TRACE ro.mpp2024.Repository.AngajatRepository 122 findById - Exit: No angajat with id 4 was found
+16 Mar 2024 17:17:40,025 TRACE ro.mpp2024.Repository.AngajatRepository 93 deleteById - Deleted 0 instances
+16 Mar 2024 17:17:40,025 TRACE ro.mpp2024.Repository.AngajatRepository 133 findAll - Enter
+16 Mar 2024 17:17:40,025 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:17:40,025 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:17:40,025 TRACE ro.mpp2024.Repository.AngajatRepository 151 findAll - Exit: Angajati: [Angajat{nume='Pop', prenume='Ionut', locatie='Cluj-Napoca', parola='popionut'}, Angajat{nume='Airizer', prenume='Viktor', locatie='Brasov', parola='airizerviktor'}, Angajat{nume='Rus', prenume='George', locatie='Cluj-Napoca', parola='rusgeorge'}, Angajat{nume='Test', prenume='Test', locatie='Locatie Test', parola='Parola Test'}]
+16 Mar 2024 17:22:55,242 INFO  ro.mpp2024.Repository.ParticipantRepository 24 <init> - Initializing ParticipantRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+16 Mar 2024 17:22:55,251 TRACE ro.mpp2024.Repository.ParticipantRepository 127 findAll - Enter
+16 Mar 2024 17:22:55,251 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:22:55,251 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2024 17:22:55,252 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+16 Mar 2024 17:22:55,252 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2024 17:22:55,252 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2024 17:22:55,487 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:22:55,493 TRACE ro.mpp2024.Repository.ParticipantRepository 144 findAll - Exit: Participanti: [Participant{nume='Popescu', prenume='Andrei', varsta=32}, Participant{nume='Marinescu', prenume='Ioana', varsta=25}, Participant{nume='Mihai', prenume='Radu', varsta=40}, Participant{nume='Dumistrescu', prenume='Elena', varsta=28}, Participant{nume='Ionescu', prenume='Alexandru', varsta=35}, Participant{nume='Gheorghe', prenume='Maria', varsta=22}, Participant{nume='Stan', prenume='Andrei', varsta=34}, Participant{nume='Vasilescu', prenume='Ana', varsta=30}, Participant{nume='Nicolescu', prenume='Gabriel', varsta=37}, Participant{nume='Dobrescu', prenume='Cristina', varsta=29}]
+16 Mar 2024 17:22:55,495 TRACE ro.mpp2024.Repository.ParticipantRepository 31 add - Enter Saving participant Participant{nume='Test', prenume='Test', varsta=10}
+16 Mar 2024 17:22:55,496 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:22:55,496 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,582 INFO  ro.mpp2024.Repository.ParticipantRepository 24 <init> - Initializing ParticipantRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+16 Mar 2024 17:24:08,588 TRACE ro.mpp2024.Repository.ParticipantRepository 127 findAll - Enter
+16 Mar 2024 17:24:08,588 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,588 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2024 17:24:08,588 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+16 Mar 2024 17:24:08,589 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2024 17:24:08,590 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2024 17:24:08,841 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,850 TRACE ro.mpp2024.Repository.ParticipantRepository 144 findAll - Exit: Participanti: [Participant{nume='Popescu', prenume='Andrei', varsta=32}, Participant{nume='Marinescu', prenume='Ioana', varsta=25}, Participant{nume='Mihai', prenume='Radu', varsta=40}, Participant{nume='Dumistrescu', prenume='Elena', varsta=28}, Participant{nume='Ionescu', prenume='Alexandru', varsta=35}, Participant{nume='Gheorghe', prenume='Maria', varsta=22}, Participant{nume='Stan', prenume='Andrei', varsta=34}, Participant{nume='Vasilescu', prenume='Ana', varsta=30}, Participant{nume='Nicolescu', prenume='Gabriel', varsta=37}, Participant{nume='Dobrescu', prenume='Cristina', varsta=29}]
+16 Mar 2024 17:24:08,852 TRACE ro.mpp2024.Repository.ParticipantRepository 31 add - Enter Saving participant Participant{nume='Test', prenume='Test', varsta=20}
+16 Mar 2024 17:24:08,852 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,852 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,859 TRACE ro.mpp2024.Repository.ParticipantRepository 42 add - Saved 1 instances
+16 Mar 2024 17:24:08,859 TRACE ro.mpp2024.Repository.ParticipantRepository 127 findAll - Enter
+16 Mar 2024 17:24:08,859 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,859 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,860 TRACE ro.mpp2024.Repository.ParticipantRepository 144 findAll - Exit: Participanti: [Participant{nume='Popescu', prenume='Andrei', varsta=32}, Participant{nume='Marinescu', prenume='Ioana', varsta=25}, Participant{nume='Mihai', prenume='Radu', varsta=40}, Participant{nume='Dumistrescu', prenume='Elena', varsta=28}, Participant{nume='Ionescu', prenume='Alexandru', varsta=35}, Participant{nume='Gheorghe', prenume='Maria', varsta=22}, Participant{nume='Stan', prenume='Andrei', varsta=34}, Participant{nume='Vasilescu', prenume='Ana', varsta=30}, Participant{nume='Nicolescu', prenume='Gabriel', varsta=37}, Participant{nume='Dobrescu', prenume='Cristina', varsta=29}, Participant{nume='Test', prenume='Test', varsta=20}]
+16 Mar 2024 17:24:08,861 TRACE ro.mpp2024.Repository.ParticipantRepository 55 update - Enter Updating participant Participant{nume='Test nou', prenume='Test nou', varsta=20}
+16 Mar 2024 17:24:08,861 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,862 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,862 TRACE ro.mpp2024.Repository.ParticipantRepository 67 update - Updated 0 instances
+16 Mar 2024 17:24:08,863 TRACE ro.mpp2024.Repository.ParticipantRepository 127 findAll - Enter
+16 Mar 2024 17:24:08,863 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,863 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,864 TRACE ro.mpp2024.Repository.ParticipantRepository 144 findAll - Exit: Participanti: [Participant{nume='Popescu', prenume='Andrei', varsta=32}, Participant{nume='Marinescu', prenume='Ioana', varsta=25}, Participant{nume='Mihai', prenume='Radu', varsta=40}, Participant{nume='Dumistrescu', prenume='Elena', varsta=28}, Participant{nume='Ionescu', prenume='Alexandru', varsta=35}, Participant{nume='Gheorghe', prenume='Maria', varsta=22}, Participant{nume='Stan', prenume='Andrei', varsta=34}, Participant{nume='Vasilescu', prenume='Ana', varsta=30}, Participant{nume='Nicolescu', prenume='Gabriel', varsta=37}, Participant{nume='Dobrescu', prenume='Cristina', varsta=29}, Participant{nume='Test', prenume='Test', varsta=20}]
+16 Mar 2024 17:24:08,865 TRACE ro.mpp2024.Repository.ParticipantRepository 99 findById - Enter Finding participant with id 11
+16 Mar 2024 17:24:08,865 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,865 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,866 TRACE ro.mpp2024.Repository.ParticipantRepository 113 findById - Exit: Found participant Participant{nume='Test', prenume='Test', varsta=20}
+16 Mar 2024 17:24:08,866 TRACE ro.mpp2024.Repository.ParticipantRepository 80 deleteById - Enter Deleting participant with id 11
+16 Mar 2024 17:24:08,866 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,866 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,867 TRACE ro.mpp2024.Repository.ParticipantRepository 99 findById - Enter Finding participant with id 11
+16 Mar 2024 17:24:08,867 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,867 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,867 TRACE ro.mpp2024.Repository.ParticipantRepository 113 findById - Exit: Found participant Participant{nume='Test', prenume='Test', varsta=20}
+16 Mar 2024 17:24:08,874 TRACE ro.mpp2024.Repository.ParticipantRepository 88 deleteById - Deleted 1 instances
+16 Mar 2024 17:24:08,874 TRACE ro.mpp2024.Repository.ParticipantRepository 127 findAll - Enter
+16 Mar 2024 17:24:08,874 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:24:08,874 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:24:08,875 TRACE ro.mpp2024.Repository.ParticipantRepository 144 findAll - Exit: Participanti: [Participant{nume='Popescu', prenume='Andrei', varsta=32}, Participant{nume='Marinescu', prenume='Ioana', varsta=25}, Participant{nume='Mihai', prenume='Radu', varsta=40}, Participant{nume='Dumistrescu', prenume='Elena', varsta=28}, Participant{nume='Ionescu', prenume='Alexandru', varsta=35}, Participant{nume='Gheorghe', prenume='Maria', varsta=22}, Participant{nume='Stan', prenume='Andrei', varsta=34}, Participant{nume='Vasilescu', prenume='Ana', varsta=30}, Participant{nume='Nicolescu', prenume='Gabriel', varsta=37}, Participant{nume='Dobrescu', prenume='Cristina', varsta=29}]
+16 Mar 2024 17:39:11,640 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+16 Mar 2024 17:39:11,647 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:39:11,647 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,647 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2024 17:39:11,647 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+16 Mar 2024 17:39:11,648 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2024 17:39:11,648 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2024 17:39:11,882 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,886 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: []
+16 Mar 2024 17:39:11,902 TRACE ro.mpp2024.Repository.ParticipareRepository 32 add - Enter Saving participare ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2024-03-16}
+16 Mar 2024 17:39:11,902 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,902 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,913 TRACE ro.mpp2024.Repository.ParticipareRepository 45 add - Saved 1 instances
+16 Mar 2024 17:39:11,913 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:39:11,914 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,914 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,917 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2024-03-16}]
+16 Mar 2024 17:39:11,918 TRACE ro.mpp2024.Repository.ParticipareRepository 58 update - Enter Updating participare ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2003-12-20}
+16 Mar 2024 17:39:11,918 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,918 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,920 TRACE ro.mpp2024.Repository.ParticipareRepository 71 update - Updated 0 instances
+16 Mar 2024 17:39:11,921 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:39:11,921 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,921 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,922 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2024-03-16}]
+16 Mar 2024 17:39:11,924 TRACE ro.mpp2024.Repository.ParticipareRepository 105 findById - Enter Finding participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:39:11,924 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,924 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,925 TRACE ro.mpp2024.Repository.ParticipareRepository 122 findById - Exit: No participare with id Pair{id1=2, id2=2} was found
+16 Mar 2024 17:39:11,925 TRACE ro.mpp2024.Repository.ParticipareRepository 84 deleteById - Enter Deleting participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:39:11,925 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,926 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,926 TRACE ro.mpp2024.Repository.ParticipareRepository 105 findById - Enter Finding participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:39:11,926 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,926 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,927 TRACE ro.mpp2024.Repository.ParticipareRepository 122 findById - Exit: No participare with id Pair{id1=2, id2=2} was found
+16 Mar 2024 17:39:11,934 TRACE ro.mpp2024.Repository.ParticipareRepository 94 deleteById - Deleted 1 instances
+16 Mar 2024 17:39:11,934 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:39:11,934 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:39:11,934 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:39:11,935 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: []
+16 Mar 2024 17:41:10,850 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+16 Mar 2024 17:41:10,856 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:41:10,856 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:10,857 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2024 17:41:10,857 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+16 Mar 2024 17:41:10,857 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2024 17:41:10,858 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2024 17:41:11,102 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,105 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: []
+16 Mar 2024 17:41:11,115 TRACE ro.mpp2024.Repository.ParticipareRepository 32 add - Enter Saving participare ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2024-03-16}
+16 Mar 2024 17:41:11,115 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:11,115 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,124 TRACE ro.mpp2024.Repository.ParticipareRepository 45 add - Saved 1 instances
+16 Mar 2024 17:41:11,124 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:41:11,124 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:11,125 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,131 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2024-03-16}]
+16 Mar 2024 17:41:11,132 TRACE ro.mpp2024.Repository.ParticipareRepository 58 update - Enter Updating participare ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2003-12-20}
+16 Mar 2024 17:41:11,133 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:11,133 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,140 TRACE ro.mpp2024.Repository.ParticipareRepository 71 update - Updated 1 instances
+16 Mar 2024 17:41:11,140 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:41:11,141 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:11,141 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,141 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2003-12-20}]
+16 Mar 2024 17:41:11,142 TRACE ro.mpp2024.Repository.ParticipareRepository 105 findById - Enter Finding participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:41:11,142 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:11,143 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,143 TRACE ro.mpp2024.Repository.ParticipareRepository 122 findById - Exit: No participare with id Pair{id1=2, id2=2} was found
+16 Mar 2024 17:41:11,144 TRACE ro.mpp2024.Repository.ParticipareRepository 84 deleteById - Enter Deleting participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:41:11,144 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:11,144 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,144 TRACE ro.mpp2024.Repository.ParticipareRepository 105 findById - Enter Finding participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:41:11,144 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:11,144 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,145 TRACE ro.mpp2024.Repository.ParticipareRepository 122 findById - Exit: No participare with id Pair{id1=2, id2=2} was found
+16 Mar 2024 17:41:11,151 TRACE ro.mpp2024.Repository.ParticipareRepository 94 deleteById - Deleted 1 instances
+16 Mar 2024 17:41:11,151 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:41:11,152 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:11,152 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:11,152 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: []
+16 Mar 2024 17:41:27,746 INFO  ro.mpp2024.Repository.ParticipareRepository 25 <init> - Initializing ParticipareRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+16 Mar 2024 17:41:27,750 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:41:27,751 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:27,751 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2024 17:41:27,751 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+16 Mar 2024 17:41:27,751 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2024 17:41:27,751 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2024 17:41:27,990 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:27,994 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: []
+16 Mar 2024 17:41:28,009 TRACE ro.mpp2024.Repository.ParticipareRepository 32 add - Enter Saving participare ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2024-03-16}
+16 Mar 2024 17:41:28,009 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:28,009 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:28,019 TRACE ro.mpp2024.Repository.ParticipareRepository 45 add - Saved 1 instances
+16 Mar 2024 17:41:28,019 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:41:28,019 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:28,020 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:28,025 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2024-03-16}]
+16 Mar 2024 17:41:28,026 TRACE ro.mpp2024.Repository.ParticipareRepository 58 update - Enter Updating participare ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2003-12-20}
+16 Mar 2024 17:41:28,026 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:28,027 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:28,035 TRACE ro.mpp2024.Repository.ParticipareRepository 71 update - Updated 1 instances
+16 Mar 2024 17:41:28,036 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:41:28,036 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:28,036 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:28,037 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: [ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2003-12-20}]
+16 Mar 2024 17:41:28,038 TRACE ro.mpp2024.Repository.ParticipareRepository 105 findById - Enter Finding participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:41:28,038 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:28,038 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:28,039 TRACE ro.mpp2024.Repository.ParticipareRepository 119 findById - Exit: Found participare ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2003-12-20}
+16 Mar 2024 17:41:28,039 TRACE ro.mpp2024.Repository.ParticipareRepository 84 deleteById - Enter Deleting participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:41:28,039 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:28,039 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:28,040 TRACE ro.mpp2024.Repository.ParticipareRepository 105 findById - Enter Finding participare with id Pair{id1=2, id2=2}
+16 Mar 2024 17:41:28,040 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:28,040 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:28,040 TRACE ro.mpp2024.Repository.ParticipareRepository 119 findById - Exit: Found participare ParticipareValdiator{Pair{id1=2, id2=2}, dataInscrierii=2003-12-20}
+16 Mar 2024 17:41:28,047 TRACE ro.mpp2024.Repository.ParticipareRepository 94 deleteById - Deleted 1 instances
+16 Mar 2024 17:41:28,047 TRACE ro.mpp2024.Repository.ParticipareRepository 133 findAll - Enter
+16 Mar 2024 17:41:28,047 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+16 Mar 2024 17:41:28,047 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+16 Mar 2024 17:41:28,047 TRACE ro.mpp2024.Repository.ParticipareRepository 149 findAll - Exit: Participari: []
+17 Mar 2024 12:33:27,992 INFO  ro.mpp2024.Repository.ProbaRepository 26 <init> - Initializing ProbaRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+17 Mar 2024 12:33:28,015 TRACE ro.mpp2024.Repository.ProbaRepository 135 findAll - Enter
+17 Mar 2024 12:33:28,016 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:33:28,016 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2024 12:33:28,016 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+17 Mar 2024 12:33:28,017 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2024 12:33:28,017 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2024 12:33:29,504 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:33:29,526 ERROR ro.mpp2024.Repository.ProbaRepository 156 findAll - java.sql.SQLException: Error parsing time stamp
+17 Mar 2024 12:38:39,405 INFO  ro.mpp2024.Repository.ProbaRepository 26 <init> - Initializing ProbaRepository with properties: {jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+17 Mar 2024 12:38:39,420 TRACE ro.mpp2024.Repository.ProbaRepository 135 findAll - Enter
+17 Mar 2024 12:38:39,421 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:39,421 TRACE ro.mpp2024.Repository.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2024 12:38:39,421 INFO  ro.mpp2024.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+17 Mar 2024 12:38:39,422 INFO  ro.mpp2024.Repository.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2024 12:38:39,423 INFO  ro.mpp2024.Repository.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2024 12:38:40,034 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,058 TRACE ro.mpp2024.Repository.ProbaRepository 152 findAll - Exit: Probe: [Proba{distanta=50, stil=liber, dataDesfasurarii=2024-05-14T00:00, locatie='Cluj-Napoca'}, Proba{distanta=50, stil=fluture, dataDesfasurarii=2024-05-25T00:00, locatie='Brasov'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2024-06-24T00:00, locatie='Cluj-Napoca'}, Proba{distanta=200, stil=spate, dataDesfasurarii=2024-07-11T00:00, locatie='Brasov'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2024-06-02T00:00, locatie='Brasov'}, Proba{distanta=200, stil=mixt, dataDesfasurarii=2024-05-19T00:00, locatie='Brasov'}, Proba{distanta=800, stil=spate, dataDesfasurarii=2024-06-27T00:00, locatie='Cluj-Napoca'}, Proba{distanta=800, stil=fluture, dataDesfasurarii=2024-07-08T00:00, locatie='Brasov'}, Proba{distanta=800, stil=liber, dataDesfasurarii=2024-08-26T00:00, locatie='Brasov'}, Proba{distanta=1500, stil=fluture, dataDesfasurarii=2024-05-23T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=spate, dataDesfasurarii=2024-08-02T00:00, locatie='Brasov'}, Proba{distanta=1500, stil=liber, dataDesfasurarii=2024-08-01T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=mixt, dataDesfasurarii=2024-07-25T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=liber, dataDesfasurarii=2024-08-16T00:00, locatie='Cluj-Napoca'}]
+17 Mar 2024 12:38:40,065 TRACE ro.mpp2024.Repository.ProbaRepository 33 add - Enter Saving proba Proba{distanta=200, stil=liber, dataDesfasurarii=2023-12-12T12:00, locatie='Cluj-Napoca'}
+17 Mar 2024 12:38:40,065 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:40,066 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,082 TRACE ro.mpp2024.Repository.ProbaRepository 46 add - Saved 1 instances
+17 Mar 2024 12:38:40,082 TRACE ro.mpp2024.Repository.ProbaRepository 135 findAll - Enter
+17 Mar 2024 12:38:40,083 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:40,083 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,090 TRACE ro.mpp2024.Repository.ProbaRepository 152 findAll - Exit: Probe: [Proba{distanta=50, stil=liber, dataDesfasurarii=2024-05-14T00:00, locatie='Cluj-Napoca'}, Proba{distanta=50, stil=fluture, dataDesfasurarii=2024-05-25T00:00, locatie='Brasov'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2024-06-24T00:00, locatie='Cluj-Napoca'}, Proba{distanta=200, stil=spate, dataDesfasurarii=2024-07-11T00:00, locatie='Brasov'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2024-06-02T00:00, locatie='Brasov'}, Proba{distanta=200, stil=mixt, dataDesfasurarii=2024-05-19T00:00, locatie='Brasov'}, Proba{distanta=800, stil=spate, dataDesfasurarii=2024-06-27T00:00, locatie='Cluj-Napoca'}, Proba{distanta=800, stil=fluture, dataDesfasurarii=2024-07-08T00:00, locatie='Brasov'}, Proba{distanta=800, stil=liber, dataDesfasurarii=2024-08-26T00:00, locatie='Brasov'}, Proba{distanta=1500, stil=fluture, dataDesfasurarii=2024-05-23T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=spate, dataDesfasurarii=2024-08-02T00:00, locatie='Brasov'}, Proba{distanta=1500, stil=liber, dataDesfasurarii=2024-08-01T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=mixt, dataDesfasurarii=2024-07-25T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=liber, dataDesfasurarii=2024-08-16T00:00, locatie='Cluj-Napoca'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2023-12-12T12:00, locatie='Cluj-Napoca'}]
+17 Mar 2024 12:38:40,094 TRACE ro.mpp2024.Repository.ProbaRepository 59 update - Enter Updating proba Proba{distanta=200, stil=fluture, dataDesfasurarii=2023-12-12T12:00, locatie='Cluj-Napoca'}
+17 Mar 2024 12:38:40,095 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:40,096 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,104 TRACE ro.mpp2024.Repository.ProbaRepository 73 update - Updated 1 instances
+17 Mar 2024 12:38:40,104 TRACE ro.mpp2024.Repository.ProbaRepository 135 findAll - Enter
+17 Mar 2024 12:38:40,105 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:40,106 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,109 TRACE ro.mpp2024.Repository.ProbaRepository 152 findAll - Exit: Probe: [Proba{distanta=50, stil=liber, dataDesfasurarii=2024-05-14T00:00, locatie='Cluj-Napoca'}, Proba{distanta=50, stil=fluture, dataDesfasurarii=2024-05-25T00:00, locatie='Brasov'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2024-06-24T00:00, locatie='Cluj-Napoca'}, Proba{distanta=200, stil=spate, dataDesfasurarii=2024-07-11T00:00, locatie='Brasov'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2024-06-02T00:00, locatie='Brasov'}, Proba{distanta=200, stil=mixt, dataDesfasurarii=2024-05-19T00:00, locatie='Brasov'}, Proba{distanta=800, stil=spate, dataDesfasurarii=2024-06-27T00:00, locatie='Cluj-Napoca'}, Proba{distanta=800, stil=fluture, dataDesfasurarii=2024-07-08T00:00, locatie='Brasov'}, Proba{distanta=800, stil=liber, dataDesfasurarii=2024-08-26T00:00, locatie='Brasov'}, Proba{distanta=1500, stil=fluture, dataDesfasurarii=2024-05-23T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=spate, dataDesfasurarii=2024-08-02T00:00, locatie='Brasov'}, Proba{distanta=1500, stil=liber, dataDesfasurarii=2024-08-01T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=mixt, dataDesfasurarii=2024-07-25T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=liber, dataDesfasurarii=2024-08-16T00:00, locatie='Cluj-Napoca'}, Proba{distanta=200, stil=fluture, dataDesfasurarii=2023-12-12T12:00, locatie='Cluj-Napoca'}]
+17 Mar 2024 12:38:40,112 TRACE ro.mpp2024.Repository.ProbaRepository 106 findById - Enter Finding proba with id 15
+17 Mar 2024 12:38:40,112 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:40,112 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,113 TRACE ro.mpp2024.Repository.ProbaRepository 121 findById - Exit: Found proba Proba{distanta=200, stil=fluture, dataDesfasurarii=2023-12-12T12:00, locatie='Cluj-Napoca'}
+17 Mar 2024 12:38:40,113 TRACE ro.mpp2024.Repository.ProbaRepository 86 deleteById - Enter Deleting proba with id 15
+17 Mar 2024 12:38:40,113 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:40,115 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,115 TRACE ro.mpp2024.Repository.ProbaRepository 106 findById - Enter Finding proba with id 15
+17 Mar 2024 12:38:40,115 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:40,116 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,116 TRACE ro.mpp2024.Repository.ProbaRepository 121 findById - Exit: Found proba Proba{distanta=200, stil=fluture, dataDesfasurarii=2023-12-12T12:00, locatie='Cluj-Napoca'}
+17 Mar 2024 12:38:40,123 TRACE ro.mpp2024.Repository.ProbaRepository 95 deleteById - Deleted 1 instances
+17 Mar 2024 12:38:40,123 TRACE ro.mpp2024.Repository.ProbaRepository 135 findAll - Enter
+17 Mar 2024 12:38:40,123 TRACE ro.mpp2024.Repository.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 12:38:40,123 TRACE ro.mpp2024.Repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25df00a0)
+17 Mar 2024 12:38:40,128 TRACE ro.mpp2024.Repository.ProbaRepository 152 findAll - Exit: Probe: [Proba{distanta=50, stil=liber, dataDesfasurarii=2024-05-14T00:00, locatie='Cluj-Napoca'}, Proba{distanta=50, stil=fluture, dataDesfasurarii=2024-05-25T00:00, locatie='Brasov'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2024-06-24T00:00, locatie='Cluj-Napoca'}, Proba{distanta=200, stil=spate, dataDesfasurarii=2024-07-11T00:00, locatie='Brasov'}, Proba{distanta=200, stil=liber, dataDesfasurarii=2024-06-02T00:00, locatie='Brasov'}, Proba{distanta=200, stil=mixt, dataDesfasurarii=2024-05-19T00:00, locatie='Brasov'}, Proba{distanta=800, stil=spate, dataDesfasurarii=2024-06-27T00:00, locatie='Cluj-Napoca'}, Proba{distanta=800, stil=fluture, dataDesfasurarii=2024-07-08T00:00, locatie='Brasov'}, Proba{distanta=800, stil=liber, dataDesfasurarii=2024-08-26T00:00, locatie='Brasov'}, Proba{distanta=1500, stil=fluture, dataDesfasurarii=2024-05-23T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=spate, dataDesfasurarii=2024-08-02T00:00, locatie='Brasov'}, Proba{distanta=1500, stil=liber, dataDesfasurarii=2024-08-01T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=mixt, dataDesfasurarii=2024-07-25T00:00, locatie='Cluj-Napoca'}, Proba{distanta=1500, stil=liber, dataDesfasurarii=2024-08-16T00:00, locatie='Cluj-Napoca'}]
