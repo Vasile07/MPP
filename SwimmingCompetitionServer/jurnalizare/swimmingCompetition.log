@@ -1,0 +1,40 @@
+03 Apr 2024 15:31:45,715 INFO  ro.mpp.AngajatRepository 24 <init> - Initializing AngajatRepository with properties: {server.host=localhost, server.port=500, jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+03 Apr 2024 15:31:45,721 INFO  ro.mpp.ParticipareRepository 22 <init> - Initializing ParticipareRepository with properties: {server.host=localhost, server.port=500, jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+03 Apr 2024 15:31:45,722 INFO  ro.mpp.ParticipantRepository 24 <init> - Initializing ParticipantRepository with properties: {server.host=localhost, server.port=500, jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+03 Apr 2024 15:31:45,724 INFO  ro.mpp.ProbaRepository 25 <init> - Initializing ProbaRepository with properties: {server.host=localhost, server.port=500, jdbc.url=jdbc:sqlite:C:/Facultate/MPP/swimming.db} 
+03 Apr 2024 15:32:18,504 TRACE ro.mpp.AngajatRepository 162 findByFirstnameLastnamePassword - Enter Finding angajat test test test
+03 Apr 2024 15:32:18,505 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+03 Apr 2024 15:32:18,505 TRACE ro.mpp.JdbcUtils 25 getNewConnection - Enter
+03 Apr 2024 15:32:18,505 INFO  ro.mpp.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+03 Apr 2024 15:32:18,507 INFO  ro.mpp.JdbcUtils 31 getNewConnection - user: null
+03 Apr 2024 15:32:18,507 INFO  ro.mpp.JdbcUtils 32 getNewConnection - pass: null
+03 Apr 2024 15:32:19,063 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@39177b69)
+03 Apr 2024 15:32:19,071 TRACE ro.mpp.AngajatRepository 179 findByFirstnameLastnamePassword - Exit: Found angajat Angajat{nume='test', prenume='test', locatie='test', parola='test'}
+03 Apr 2024 15:32:20,087 TRACE ro.mpp.ProbaRepository 162 getAllProbaAfterToday - Enter Entry get all proba after today
+03 Apr 2024 15:32:20,088 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+03 Apr 2024 15:32:20,088 TRACE ro.mpp.JdbcUtils 25 getNewConnection - Enter
+03 Apr 2024 15:32:20,088 INFO  ro.mpp.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+03 Apr 2024 15:32:20,088 INFO  ro.mpp.JdbcUtils 31 getNewConnection - user: null
+03 Apr 2024 15:32:20,088 INFO  ro.mpp.JdbcUtils 32 getNewConnection - pass: null
+03 Apr 2024 15:32:20,090 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71bebe17)
+03 Apr 2024 15:32:20,095 TRACE ro.mpp.ProbaRepository 179 getAllProbaAfterToday - Exit: Probe: [ro.mpp.Domain.ProbaDTO@cb80977c, ro.mpp.Domain.ProbaDTO@e28701c2, ro.mpp.Domain.ProbaDTO@d72d241a, ro.mpp.Domain.ProbaDTO@71b4807c, ro.mpp.Domain.ProbaDTO@5b8780b7, ro.mpp.Domain.ProbaDTO@28043435, ro.mpp.Domain.ProbaDTO@16e86e8b, ro.mpp.Domain.ProbaDTO@160e9218, ro.mpp.Domain.ProbaDTO@83643423, ro.mpp.Domain.ProbaDTO@bf0de1eb, ro.mpp.Domain.ProbaDTO@c5369660, ro.mpp.Domain.ProbaDTO@2e19a6ed, ro.mpp.Domain.ProbaDTO@fa9674b2, ro.mpp.Domain.ProbaDTO@3183907a]
+03 Apr 2024 15:32:24,349 TRACE ro.mpp.ParticipantRepository 201 findByFirstnameAndLastname - Enter Finding participant with name: test test
+03 Apr 2024 15:32:24,349 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+03 Apr 2024 15:32:24,350 TRACE ro.mpp.JdbcUtils 25 getNewConnection - Enter
+03 Apr 2024 15:32:24,350 INFO  ro.mpp.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+03 Apr 2024 15:32:24,351 INFO  ro.mpp.JdbcUtils 31 getNewConnection - user: null
+03 Apr 2024 15:32:24,351 INFO  ro.mpp.JdbcUtils 32 getNewConnection - pass: null
+03 Apr 2024 15:32:24,353 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@691c6590)
+03 Apr 2024 15:32:24,355 TRACE ro.mpp.ParticipantRepository 217 findByFirstnameAndLastname - Exit: Found participant Participant{nume='test', prenume='test', varsta=20}
+03 Apr 2024 15:32:24,361 TRACE ro.mpp.ProbaRepository 105 findById - Enter Finding proba with id 4
+03 Apr 2024 15:32:24,361 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+03 Apr 2024 15:32:24,361 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71bebe17)
+03 Apr 2024 15:32:24,363 TRACE ro.mpp.ProbaRepository 120 findById - Exit: Found proba Proba{distanta=200, stil=spate, dataDesfasurarii=2024-07-11T00:00, locatie='Brasov'}
+03 Apr 2024 15:32:24,364 TRACE ro.mpp.ParticipareRepository 29 add - Enter Saving participare ParticipareValdiator{Pair{id1=Participant{nume='test', prenume='test', varsta=20}, id2=Proba{distanta=200, stil=spate, dataDesfasurarii=2024-07-11T00:00, locatie='Brasov'}}, dataInscrierii=2024-04-03}
+03 Apr 2024 15:32:24,364 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+03 Apr 2024 15:32:24,364 TRACE ro.mpp.JdbcUtils 25 getNewConnection - Enter
+03 Apr 2024 15:32:24,364 INFO  ro.mpp.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Facultate/MPP/swimming.db
+03 Apr 2024 15:32:24,364 INFO  ro.mpp.JdbcUtils 31 getNewConnection - user: null
+03 Apr 2024 15:32:24,364 INFO  ro.mpp.JdbcUtils 32 getNewConnection - pass: null
+03 Apr 2024 15:32:24,366 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7b2c9bb6)
+03 Apr 2024 15:32:24,374 TRACE ro.mpp.ParticipareRepository 42 add - Saved 1 instances

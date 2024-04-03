@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'ro.mpp'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+
+    modules = [ 'javafx.controls' , 'javafx.fxml']
+}
+
+application{
+    mainClass = 'ro.mpp.StartClient'
+}
+
+
+dependencies {
+    implementation project (':SwimmingCompetitionServices')
+    implementation project (':SwimmingCompetitionModel')
+    implementation project (':SwimmingCompetitionNetworking')
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
