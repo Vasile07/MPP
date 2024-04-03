@@ -1,7 +1,6 @@
 package ro.mpp2024.Repository;
 
-import ro.mpp2024.Domain.Pair;
-import ro.mpp2024.Domain.Participare;
+import ro.mpp2024.Domain.*;
 
-public interface ParticipareAbstractRepository extends AbstractRepository<Pair<Integer,Integer>, Participare>{
+public interface ParticipareAbstractRepository extends AbstractRepository<Pair<Participant, Proba>, Participare>{
 }

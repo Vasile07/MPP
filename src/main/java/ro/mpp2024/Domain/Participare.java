@@ -3,7 +3,7 @@ package ro.mpp2024.Domain;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Participare extends Entity<Pair<Integer,Integer>>{
+public class Participare extends Entity<Pair<Participant,Proba>>{
     private LocalDate dataInscrierii;
 
     public Participare(LocalDate dataInscrierii) {

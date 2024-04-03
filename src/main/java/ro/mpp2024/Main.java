@@ -1,5 +1,13 @@
 package ro.mpp2024;
 
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import ro.mpp2024.Business.Service;
+import ro.mpp2024.Business.ServiceInterface;
+import ro.mpp2024.Controller.LoginController;
 import ro.mpp2024.Domain.*;
 import ro.mpp2024.Repository.*;
 import ro.mpp2024.Validator.AngajatValidator;
@@ -13,9 +21,47 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Properties;
 
-public class Main {
+public class Main extends Application {
 
     public static void main(String[] args) {
+        launch();
+    }
+
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileReader("bd.config"));
+
+            AngajatAbstractRepository angajatRepository = new AngajatRepository(properties, new AngajatValidator());
+            ParticipareAbstractRepository participareRepository = new ParticipareRepository(properties, new ParticipareValdiator());
+            ParticipantAbstractRepository participantRepository = new ParticipantRepository(properties, new ParticipantValidator());
+            ProbaAbstractRepository probaRepository = new ProbaRepository(properties, new ProbaValidator());
+
+            ServiceInterface service = new Service(angajatRepository,participantRepository,participareRepository,probaRepository);
+
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("/View/login-view.fxml"));
+            Scene scene = new Scene(loader.load());
+            stage.setScene(scene);
+
+            stage.setTitle("Swimming Competiton");
+
+            stage.getIcons().add(new Image(Main.class.getResourceAsStream("/View/swim.jpg"))); // Pentru icon-ul aplicatiei
+
+            LoginController loginController = loader.getController();
+            loginController.setService(stage,service);
+
+            stage.show();
+
+        } catch (IOException e) {
+            System.out.println("Cannot find bd.config " + e);
+        }
+    }
+
+
+
+    private static void teste() {
         Properties properties = new Properties();
         try {
             properties.load(new FileReader("bd.config"));
@@ -23,7 +69,6 @@ public class Main {
 //            testParticipant(properties);
 //            testParticipare(properties);
 //            testProba(properties);
-
         } catch (IOException e) {
             System.out.println("Cannot find bd.config " + e);
         }
@@ -54,13 +99,14 @@ public class Main {
 
         participantRepository.findAll().forEach(System.out::println);
 
-        Participant participant = new Participant("Test", "Test",20);
+        Participant participant = new Participant("Test", "Test", 20);
         participant.setId(12);
 
         participantRepository.add(participant);
         participantRepository.findAll().forEach(System.out::println);
 
-        participant.setNume("Test nou"); participant.setPrenume("Test nou");
+        participant.setNume("Test nou");
+        participant.setPrenume("Test nou");
         participantRepository.update(participant);
         participantRepository.findAll().forEach(System.out::println);
 
@@ -70,32 +116,16 @@ public class Main {
         participantRepository.findAll().forEach(System.out::println);
     }
 
-    private static void testParticipare(Properties properties){
-        ParticipareAbstractRepository participareRepository = new ParticipareRepository(properties, new ParticipareValdiator());
-        participareRepository.findAll().forEach(System.out::println);
+    private static void testParticipare(Properties properties) {
 
-        Participare participare = new Participare(LocalDate.now());
-        participare.setId(new Pair<>(2,2));
-
-        participareRepository.add(participare);
-        participareRepository.findAll().forEach(System.out::println);
-
-        participare.setDataInscrierii(LocalDate.of(2003,12,20));
-        participareRepository.update(participare);
-        participareRepository.findAll().forEach(System.out::println);
-
-        System.out.println(participareRepository.findById(new Pair<>(2,2)));
-
-        participareRepository.deleteById(new Pair<>(2,2));
-        participareRepository.findAll().forEach(System.out::println);
     }
 
-    private static void testProba(Properties properties){
-        ProbaAbstractRepository probaRepository = new ProbaRepository(properties,new ProbaValidator());
+    private static void testProba(Properties properties) {
+        ProbaAbstractRepository probaRepository = new ProbaRepository(properties, new ProbaValidator());
 
         probaRepository.findAll().forEach(System.out::println);
         System.out.println();
-        Proba proba = new Proba(200,StilInot.liber, LocalDateTime.of(2023,12,12,12,00,00),"Cluj-Napoca");
+        Proba proba = new Proba(200, StilInot.liber, LocalDateTime.of(2023, 12, 12, 12, 00, 00), "Cluj-Napoca");
         proba.setId(16);
 
         probaRepository.add(proba);
@@ -112,5 +142,4 @@ public class Main {
         probaRepository.findAll().forEach(System.out::println);
         System.out.println();
     }
-
 }

@@ -159,6 +159,32 @@ public class AngajatRepository implements AngajatAbstractRepository{
 
     @Override
     public Optional<Angajat> findByFirstnameLastnamePassword(String firstname, String lastname, String password) {
-        return Optional.empty();
+        logger.traceEntry("Finding angajat {}", firstname + " " + lastname + " " + password);
+        Connection connection = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("select * from Angajat where prenume = ? and nume = ? and parola = ?"))
+        {
+            preparedStatement.setString(1, firstname);
+            preparedStatement.setString(2, lastname);
+            preparedStatement.setString(3, password);
+            try(ResultSet resultSet = preparedStatement.executeQuery()){
+                if(resultSet.next()){
+                    Integer idAngajat = resultSet.getInt("id_angajat");
+                    String nume = resultSet.getString("nume");
+                    String prenume = resultSet.getString("prenume");
+                    String locatie = resultSet.getString("locatie");
+                    String parola = resultSet.getString("parola");
+
+                    Angajat angajat = new Angajat(nume, prenume, locatie, parola);
+                    angajat.setId(idAngajat);
+                    logger.traceExit("Found angajat {}",angajat);
+                    return Optional.of(angajat);
+                }
+                logger.traceExit("No angajat {} was found",firstname + " " + lastname + " " + password);
+                return Optional.empty();
+            }
+        } catch (SQLException e) {
+            logger.error(e);
+            throw new RuntimeException(e);
+        }
     }
 }

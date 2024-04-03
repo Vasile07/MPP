@@ -2,10 +2,7 @@ package ro.mpp2024.Repository;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ro.mpp2024.Domain.Angajat;
-import ro.mpp2024.Domain.Pair;
-import ro.mpp2024.Domain.Participant;
-import ro.mpp2024.Domain.Participare;
+import ro.mpp2024.Domain.*;
 import ro.mpp2024.Validator.AbstractValidator;
 
 import java.sql.*;
@@ -35,8 +32,8 @@ public class ParticipareRepository implements ParticipareAbstractRepository {
         {
             validator.validate(participare);
 
-            preparedStatement.setInt(1, participare.getId().getId1());
-            preparedStatement.setInt(2, participare.getId().getId2());
+            preparedStatement.setInt(1, participare.getId().getId1().getId());
+            preparedStatement.setInt(2, participare.getId().getId2().getId());
             LocalDateTime dateTime = participare.getDataInscrierii().atStartOfDay();
             DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
             preparedStatement.setString(3, dateTime.format(dateTimeFormatter));
@@ -64,8 +61,8 @@ public class ParticipareRepository implements ParticipareAbstractRepository {
             LocalDateTime dateTime = participare.getDataInscrierii().atStartOfDay();
             DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
             preparedStatement.setTimestamp(1, Timestamp.valueOf(dateTime.format(dateTimeFormatter)));
-            preparedStatement.setInt(2, participare.getId().getId1());
-            preparedStatement.setInt(3, participare.getId().getId2());
+            preparedStatement.setInt(2, participare.getId().getId1().getId());
+            preparedStatement.setInt(3, participare.getId().getId2().getId());
 
             int rows = preparedStatement.executeUpdate();
             logger.trace("Updated {} instances", rows);
@@ -80,15 +77,15 @@ public class ParticipareRepository implements ParticipareAbstractRepository {
     }
 
     @Override
-    public Optional<Participare> deleteById(Pair<Integer, Integer> id) {
+    public Optional<Participare> deleteById(Pair<Participant, Proba> id) {
         logger.traceEntry("Deleting participare with id {}",id);
         Connection connection = dbUtils.getConnection();
         try(PreparedStatement preparedStatement = connection.prepareStatement("delete from Participare  where id_participant=? and id_proba=?"))
         {
             Optional<Participare> participare = findById(id);
 
-            preparedStatement.setInt(1, id.getId1());
-            preparedStatement.setInt(2, id.getId2());
+            preparedStatement.setInt(1, id.getId1().getId());
+            preparedStatement.setInt(2, id.getId2().getId());
 
             int rows = preparedStatement.executeUpdate();
             logger.trace("Deleted {} instances", rows);
@@ -101,13 +98,13 @@ public class ParticipareRepository implements ParticipareAbstractRepository {
     }
 
     @Override
-    public Optional<Participare> findById(Pair<Integer, Integer> id) {
+    public Optional<Participare> findById(Pair<Participant, Proba> id) {
         logger.traceEntry("Finding participare with id {}", id);
         Connection connection = dbUtils.getConnection();
         try(PreparedStatement preparedStatement = connection.prepareStatement("select * from Participare where id_participant = ? and id_proba = ?"))
         {
-            preparedStatement.setInt(1, id.getId1());
-            preparedStatement.setInt(2, id.getId2());
+            preparedStatement.setInt(1, id.getId1().getId());
+            preparedStatement.setInt(2, id.getId2().getId());
             try(ResultSet resultSet = preparedStatement.executeQuery()){
                 if(resultSet.next()){
                     Integer idParticipant = resultSet.getInt("id_participant");
@@ -115,7 +112,7 @@ public class ParticipareRepository implements ParticipareAbstractRepository {
                     LocalDate dataInscrierii = resultSet.getTimestamp("data_inscrierii").toLocalDateTime().toLocalDate();
 
                     Participare participare = new Participare(dataInscrierii);
-                    participare.setId(new Pair<>(idParticipant, idProba));
+                    participare.setId(new Pair<>(findParticipantById(idParticipant), findProbaById(idProba)));
                     logger.traceExit("Found participare {}",participare);
                     return Optional.of(participare);
                 }
@@ -128,6 +125,59 @@ public class ParticipareRepository implements ParticipareAbstractRepository {
         }
     }
 
+    private Participant findParticipantById(Integer id) {
+        logger.traceEntry("Finding participant with id {}", id);
+        Connection connection = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("select * from Participant where id_participant = ?"))
+        {
+            preparedStatement.setInt(1, id);
+            try(ResultSet resultSet = preparedStatement.executeQuery()){
+                if(resultSet.next()){
+                    Integer idParticipant = resultSet.getInt("id_participant");
+                    String nume = resultSet.getString("nume");
+                    String prenume = resultSet.getString("prenume");
+                    Integer varsta = resultSet.getInt("varsta");
+
+                    Participant participant = new Participant(nume, prenume, varsta);
+                    participant.setId(idParticipant);
+                    logger.traceExit("Found participant {}",participant);
+                    return participant;
+                }
+                logger.traceExit("No participant with id {} was found",id);
+                return null;
+            }
+        } catch (SQLException e) {
+            logger.error(e);
+            throw new RuntimeException(e);
+        }
+    }
+    private Proba findProbaById(Integer id) {
+        logger.traceEntry("Finding proba with id {}", id);
+        Connection connection = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("select * from Proba where id_proba = ?"))
+        {
+            preparedStatement.setInt(1, id);
+            try(ResultSet resultSet = preparedStatement.executeQuery()){
+                if(resultSet.next()){
+                    Integer idProba = resultSet.getInt("id_proba");
+                    Integer distanta = resultSet.getInt("distanta");
+                    StilInot stilInot = StilInot.valueOf(resultSet.getString("stil"));
+                    LocalDateTime dataDesfasurarii = resultSet.getTimestamp("data_desfasurarii").toLocalDateTime();
+                    String locatie = resultSet.getString("locatie");
+
+                    Proba proba = new Proba(distanta, stilInot, dataDesfasurarii, locatie);
+                    proba.setId(idProba);
+                    logger.traceExit("Found proba {}",proba);
+                    return proba;
+                }
+                logger.traceExit("No proba with id {} was found",id);
+                return null;
+            }
+        } catch (SQLException e) {
+            logger.error(e);
+            throw new RuntimeException(e);
+        }
+    }
     @Override
     public List<Participare> findAll() {
         logger.traceEntry();
@@ -142,7 +192,7 @@ public class ParticipareRepository implements ParticipareAbstractRepository {
                     LocalDate dataInscrierii = resultSet.getTimestamp("data_inscrierii").toLocalDateTime().toLocalDate();
 
                     Participare participare = new Participare(dataInscrierii);
-                    participare.setId(new Pair<>(idParticipant, idProba));
+                    participare.setId(new Pair<>(findParticipantById(idParticipant), findProbaById(idProba)));
 
                     participari.add(participare);
                 }

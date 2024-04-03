@@ -1,2 +1,8 @@
 rootProject.name = 'SwimmingCompetitonJava'
+include 'SwimmingCompetitionServices'
+include 'SwimmingCompetitionClient'
+include 'SwimmingCompetitionModel'
+include 'SwimmingCompetitionServer'
+include 'SwimmingCompetitionPersistance'
+include 'SwimmingCompetitionNetworking'
 

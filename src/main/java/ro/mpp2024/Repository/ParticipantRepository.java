@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ro.mpp2024.Domain.Angajat;
 import ro.mpp2024.Domain.Participant;
+import ro.mpp2024.Domain.ParticipantDTO;
 import ro.mpp2024.Validator.AbstractValidator;
 
 import java.sql.Connection;
@@ -151,7 +152,78 @@ public class ParticipantRepository implements ParticipantAbstractRepository {
     }
 
     @Override
-    public List<Participant> getAllParticipantiFromProba(Integer probaId) {
-        return null;
+    public List<ParticipantDTO> getAllParticipantiFromProba(Integer probaId) {
+        logger.traceEntry();
+        Connection connection = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("select * from Participant where id_participant in (select id_participant from Participare where id_proba = ?)"))
+        {
+            preparedStatement.setInt(1,probaId);
+            try(ResultSet resultSet = preparedStatement.executeQuery()){
+                List<ParticipantDTO> participanti = new ArrayList<>();
+                while(resultSet.next()){
+                    Integer idParticipant = resultSet.getInt("id_participant");
+                    String nume = resultSet.getString("nume");
+                    String prenume = resultSet.getString("prenume");
+                    Integer varsta = resultSet.getInt("varsta");
+                    List<Integer> probe = getAllParticipariForParticipant(idParticipant);
+                    ParticipantDTO participant = new ParticipantDTO(nume, prenume, varsta, probe);
+
+                    participanti.add(participant);
+                }
+                logger.traceExit("Participanti: {}", participanti);
+                return participanti;
+            }
+        } catch (SQLException e) {
+            logger.error(e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    private List<Integer> getAllParticipariForParticipant(Integer idParticipant) {
+        Connection connection = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("select id_proba from Participare where id_participant = ?"))
+        {
+            preparedStatement.setInt(1,idParticipant);
+            try(ResultSet resultSet = preparedStatement.executeQuery()){
+                List<Integer> probe = new ArrayList<>();
+                while(resultSet.next()){
+                    Integer idProba = resultSet.getInt("id_proba");
+                    probe.add(idProba);
+                }
+                return probe;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public Optional<Participant> findByFirstnameAndLastname(String firstname, String lastname) {
+        logger.traceEntry("Finding participant with name: {}", firstname + " " + lastname);
+        Connection connection = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("select * from Participant where nume = ? and prenume = ?"))
+        {
+            preparedStatement.setString(1,lastname);
+            preparedStatement.setString(2,firstname);
+
+            try(ResultSet resultSet = preparedStatement.executeQuery()){
+                if(resultSet.next()){
+                    Integer idParticipant = resultSet.getInt("id_participant");
+                    String nume = resultSet.getString("nume");
+                    String prenume = resultSet.getString("prenume");
+                    Integer varsta = resultSet.getInt("varsta");
+
+                    Participant participant = new Participant(nume, prenume, varsta);
+                    participant.setId(idParticipant);
+                    logger.traceExit("Found participant {}",participant);
+                    return Optional.of(participant);
+                }
+                logger.traceExit("No participant with name {} was found",firstname + " " + lastname);
+                return Optional.empty();
+            }
+        } catch (SQLException e) {
+            logger.error(e);
+            throw new RuntimeException(e);
+        }
     }
 }

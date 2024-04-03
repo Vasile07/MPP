@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ro.mpp2024.Domain.Angajat;
 import ro.mpp2024.Domain.Proba;
+import ro.mpp2024.Domain.ProbaDTO;
 import ro.mpp2024.Domain.StilInot;
 import ro.mpp2024.Validator.AbstractValidator;
 
@@ -159,7 +160,30 @@ public class ProbaRepository implements ProbaAbstractRepository{
     }
 
     @Override
-    public List<Proba> getAllProbaAfterToday() {
-        return null;
+    public List<ProbaDTO> getAllProbaAfterToday() {
+        logger.traceEntry("Entry get all proba after today");
+        Connection connection = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("select P.*,count(pa.id_participant) as nrInregistrari from Proba P left join Participare Pa on Pa.id_proba = P.id_proba where date(P.data_desfasurarii) > current_date group by P.id_proba"))
+        {
+            List<ProbaDTO> probe = new ArrayList<>();
+            try(ResultSet resultSet = preparedStatement.executeQuery()){
+                while (resultSet.next()){
+                    Integer idProba = resultSet.getInt("id_proba");
+                    Integer distanta = resultSet.getInt("distanta");
+                    StilInot stilInot = StilInot.valueOf(resultSet.getString("stil"));
+                    LocalDateTime dataDesfasurarii = resultSet.getTimestamp("data_desfasurarii").toLocalDateTime();
+                    String locatie = resultSet.getString("locatie");
+                    Integer nrInregistrari = resultSet.getInt("nrInregistrari");
+
+                    ProbaDTO proba = new ProbaDTO(idProba,distanta, stilInot, dataDesfasurarii, locatie,nrInregistrari);
+                    probe.add(proba);
+                }
+                logger.traceExit("Probe: {}", probe);
+                return probe;
+            }
+        } catch (SQLException e) {
+            logger.error(e);
+            throw new RuntimeException(e);
+        }
     }
 }
